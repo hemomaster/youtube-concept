@@ -1,0 +1,360 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+ul[class] {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: currentColor;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+body {
+  font: 400 16px/1.25 "Mulish", sans-serif;
+  color: #898989;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main {
+  flex: 1;
+  display: flex;
+}
+main aside.sidebar {
+  flex: 0 0 160px;
+  order: -1;
+}
+main section.content {
+  flex: 1;
+}
+header.header,
+footer.footer {
+  flex: 0 0 auto;
+}
+/* *******************************
+HEADER
+******************************* */
+.header {
+  flex: 0 0 auto;
+  padding: 20px 70px 20px 32px;
+  margin-bottom: 30px;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__burger {
+  flex-shrink: 0;
+  padding: 10px 10px 10px 0;
+  margin-right: 18px;
+}
+.header__burger-inner {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 17px;
+}
+
+.header__burger-inner::before,
+.header__burger-inner::after,
+.header__burger-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #1f2022;
+}
+.header__burger-inner::before,
+.header__burger-inner::after {
+  content: "";
+}
+.header__burger-inner::before {
+  top: 0;
+}
+.header__burger-inner::after {
+  bottom: 0;
+}
+.header__burger-bar {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__logo {
+  flex-shrink: 0;
+  margin-right: 59px;
+}
+.logo {
+  width: 116px;
+  height: 25px;
+}
+.header__search {
+  display: flex;
+  max-width: 830px;
+  width: 43.23%;
+  padding: 12px 23px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 22px;
+  margin-right: auto;
+}
+.header__search-text {
+  flex: 1;
+  color: rgb(48, 56, 76, 0.4);
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+}
+.header__search-text::placeholder {
+  font-family: inherit;
+  color: currentColor;
+}
+.header__search-btn {
+  flex: 0 0 19px;
+  height: 19px;
+}
+.header__search-btn:hover .header__search-icon {
+  fill-opacity: 0.6;
+}
+.header__search-icon {
+  width: 19px;
+  height: 19px;
+  fill: #000;
+  fill-opacity: 0.24;
+  transition: fill-opacity 0.3s ease-in-out;
+}
+.header__controls {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  margin-right: 45px;
+}
+.header__controls-btn {
+  position: relative;
+  flex-shrink: 0;
+}
+.header__controls-btn:not(:last-child) {
+  margin-right: 50px;
+}
+.header__controls-btn:hover .header__controls-icon {
+  fill-opacity: 0.5;
+}
+.header__controls-icon {
+  fill: #000;
+  fill-opacity: 0.24;
+  transition: fill-opacity 0.3s ease-in-out;
+}
+.icon-camera {
+  width: 27px;
+  height: 20px;
+}
+.icon-dots {
+  width: 21px;
+  height: 21px;
+}
+.icon-message {
+  width: 22px;
+  height: 26px;
+}
+.btn-message-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: #ff0000;
+  border: 1px solid #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+}
+.header__profile {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+/* *******************************
+FOOTER
+******************************* */
+.footer {
+  padding: 4px 0 40px 34px;
+}
+.footer__setting {
+  display: flex;
+  align-items: center;
+  color: #c2c2c2;
+}
+.footer__setting-icon {
+  flex: 0 0 19px;
+  margin-right: 12px;
+}
+.icon-setting {
+  width: 19px;
+  height: 20px;
+  fill: #000;
+  fill-opacity: 0.24;
+}
+/* *******************************
+SIDEBAR
+******************************* */
+.sidebar {
+  box-sizing: content-box;
+  padding-left: 34px;
+  margin-right: 66px;
+}
+.nav__list:not(:last-child) {
+  margin-bottom: 60px;
+}
+.nav__list:last-of-type {
+  margin-bottom: 30px;
+}
+.nav__list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.nav__list-link,
+.nav__btn {
+  display: flex;
+  align-items: center;
+  color: #898989;
+  transition: color 0.3s ease-in-out;
+}
+.nav__list-link:hover,
+.nav__btn:hover {
+  color: #ff0000;
+}
+.nav__list-link:hover .nav__list-icon,
+.nav__btn:hover .nav__btn-icon {
+  fill: #ff0000;
+  fill-opacity: 1;
+}
+.nav__list-icon,
+.nav__btn-icon {
+  fill: #000;
+  fill-opacity: 0.24;
+  margin-right: 13px;
+  transition: fill 0.3s ease-in-out, fill-opacity 0.3s ease-in-out;
+}
+.nav__btn {
+  margin-bottom: 60px;
+}
+.icon-home {
+  width: 20px;
+  height: 19px;
+}
+.icon-trending {
+  width: 16px;
+  height: 21px;
+}
+.icon-subscriptions {
+  width: 18px;
+  height: 18px;
+}
+.icon-library {
+  width: 20px;
+  height: 16px;
+}
+.icon-history {
+  width: 20px;
+  height: 18px;
+}
+.icon-watch {
+  width: 17px;
+  height: 19px;
+}
+.icon-favourites {
+  width: 19px;
+  height: 18px;
+}
+.icon-liked {
+  width: 18px;
+  height: 17px;
+}
+.icon-music {
+  width: 18px;
+  height: 20px;
+}
+.icon-games {
+  width: 22px;
+  height: 16px;
+}
+.icon-chevron-down {
+  width: 14px;
+  height: 8px;
+}
+.icon-setting {
+  width: 19px;
+  height: 20px;
+}
+/* *******************************
+SUBSCRIPTIONS
+******************************* */
+.nav__title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.nav__subscript {
+  margin-bottom: 105px;
+}
+.nav__subscript-item:not(:last-child) {
+  margin-bottom: 23px;
+}
+.nav__subscript-link {
+  display: flex;
+  align-items: center;
+  color: #898989;
+  transition: color 0.3s ease-in-out;
+}
+.nav__subscript-link:hover {
+  color: #444444;
+}
+.nav__subscript-avatar {
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.nav__subscript-user {
+  white-space: nowrap;
+}
