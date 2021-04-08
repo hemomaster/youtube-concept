@@ -55,6 +55,9 @@ body {
 /* *******************************
 CHANNEL-TITLE
 ******************************* */
+.channel {
+  position: relative;
+}
 .channel-title {
   display: inline-flex;
   align-items: center;
@@ -80,7 +83,9 @@ SLIDER BUTTON PREV
 SLIDER BUTTON NEXT
 ******************************* */
 .slider-button-prev,
-.slider-button-next {
+.slider-button-next,
+.recommended__slider-button-prev,
+.recommended__slider-button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -88,10 +93,12 @@ SLIDER BUTTON NEXT
   height: 28px;
   cursor: pointer;
 }
-.slider-button-prev {
+.slider-button-prev,
+.recommended__slider-button-prev {
   right: 118px;
 }
-.slider-button-next {
+.slider-button-next,
+.recommended__slider-button-next {
   right: 80px;
 }
 .icon-arrow-left,
@@ -389,34 +396,22 @@ SUBSCRIPTIONS
   font-weight: 400;
 }
 /* *******************************
-CONTENT
+SUBSCRIPT CHANNEL
 ******************************* */
 .main {
   padding-left: 230px;
   padding-top: 30px;
   margin-top: 86px;
 }
-.subscript {
+.subscript,
+.recommended {
   margin-bottom: 30px;
 }
-.subscript__header {
-  position: relative;
-}
+
 .subscript__channel {
   margin-bottom: 30px;
 }
-.swiper-container {
-}
-.subscript__slider {
-}
-.swiper-wrapper {
-}
-.subscript__wrapper {
-}
-.swiper-slide {
-}
-.subscript__slide {
-}
+
 /* *******************************
 VIDEO-CARD
 ******************************* */
@@ -483,11 +478,13 @@ VIDEO-CARD
   border-radius: 100%;
   background-color: #c2c2c2;
 }
-.video-card__info-date {
+/* *******************************
+RECOMMENDED CHANNEL
+******************************* */
+.recommended .video-card,
+.recommended .video-card__thumb {
+  width: 510px;
 }
-.video-card__info-channel {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
+.recommended .video-card__thumb {
+  height: 220px;
 }
