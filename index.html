@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
     <title>YouTube</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -15,7 +33,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
   <body>
     <div class="wrapper">
@@ -70,11 +89,14 @@
             </button>
           </div>
           <div class="header__profile">
-            <img
-              src="./images/user.jpg"
-              alt="user avatar"
-              class="header__profile-avatar"
-            />
+            <picture>
+              <source srcset="./images/user.webp" />
+              <img
+                src="./images/user.jpg"
+                alt="user avatar"
+                class="header__profile-avatar"
+              />
+            </picture>
           </div>
         </div>
       </header>
@@ -82,11 +104,14 @@
         <section class="subscript">
           <div class="subscript__header channel">
             <a class="subscript__channel channel-title" href="#">
-              <img
-                src="./images/chanel-1.png"
-                alt="chanel avatar"
-                class="channel-title__avatar"
-              /><span class="channel-title__name">Dollie Blair</span>
+              <picture>
+                <source srcset="./images/chanel-1.webp" />
+                <img
+                  src="./images/chanel-1.png"
+                  alt="chanel avatar"
+                  class="channel-title__avatar"
+              /></picture>
+              <span class="channel-title__name">Dollie Blair</span>
             </a>
             <div class="slider-button-prev">
               <svg class="icon icon-arrow-left">
@@ -108,11 +133,13 @@
               <div class="swiper-slide subscript__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/cover-1-1.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/cover-1-1.webp" />
+                      <img
+                        src="./images/cover-1-1.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="4:15"
                       >4:15</time
                     >
@@ -134,11 +161,13 @@
               <div class="swiper-slide subscript__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/cover-1-2.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/cover-1-2.webp" />
+                      <img
+                        src="./images/cover-1-2.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="0:01"
                       >0:01</time
                     >
@@ -160,11 +189,13 @@
               <div class="swiper-slide subscript__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/cover-1-3.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/cover-1-3.webp" />
+                      <img
+                        src="./images/cover-1-3.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="4:15"
                       >1:04:15</time
                     >
@@ -184,11 +215,13 @@
               <div class="swiper-slide subscript__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/cover-1-4.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/cover-1-4.webp" />
+                      <img
+                        src="./images/cover-1-4.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="4:15"
                       >24:59:59</time
                     >
@@ -208,11 +241,13 @@
               <div class="swiper-slide subscript__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/cover-1-5.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/cover-1-5.webp" />
+                      <img
+                        src="./images/cover-1-5.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="4:15"
                       >4:15</time
                     >
@@ -232,11 +267,13 @@
               <div class="swiper-slide subscript__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/cover-1-6.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/cover-1-6.webp" />
+                      <img
+                        src="./images/cover-1-6.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="4:15"
                       >4:15</time
                     >
@@ -281,11 +318,13 @@
               <div class="swiper-slide recommended__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/recommended-1.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/recommended-1.webp" />
+                      <img
+                        src="./images/recommended-1.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="3:40"
                       >3:40</time
                     >
@@ -307,11 +346,13 @@
               <div class="swiper-slide subscript__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/recommended-2.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/recommended-2.webp" />
+                      <img
+                        src="./images/recommended-2.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="2:12"
                       >2:12</time
                     >
@@ -331,11 +372,13 @@
               <div class="swiper-slide subscript__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/recommended-3.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/recommended-3.webp" />
+                      <img
+                        src="./images/recommended-3.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="21:04:15"
                       >21:04:15</time
                     >
@@ -360,11 +403,13 @@
           <div class="favorit__header channel">
             <div class="favorit__header-inner">
               <a class="foavorit__channel channel-title" href="#">
-                <img
-                  src="./images/channel-fav-avatar.png"
-                  alt="chanel avatar"
-                  class="channel-title__avatar"
-                /><span class="channel-title__name">Food & Drink</span>
+                <picture>
+                  <source srcset="./images/channel-fav-avatar.webp" />
+                  <img
+                    src="./images/channel-fav-avatar.png"
+                    alt="chanel avatar"
+                    class="channel-title__avatar" /></picture
+                ><span class="channel-title__name">Food & Drink</span>
               </a>
               <span class="favorit__descr">Recommended channel for you</span>
             </div>
@@ -391,11 +436,13 @@
               <div class="swiper-slide favorit__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/channel-fav-1.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/channel-fav-1.webp" />
+                      <img
+                        src="./images/channel-fav-1.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="4:15"
                       >4:15</time
                     >
@@ -417,11 +464,13 @@
               <div class="swiper-slide favorit__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/channel-fav-2.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/channel-fav-2.webp" />
+                      <img
+                        src="./images/channel-fav-2.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="0:01"
                       >0:01</time
                     >
@@ -443,11 +492,13 @@
               <div class="swiper-slide fovarit__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/channel-fav-3.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/channel-fav-3.webp" />
+                      <img
+                        src="./images/channel-fav-3.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="4:15"
                       >1:04:15</time
                     >
@@ -467,11 +518,13 @@
               <div class="swiper-slide favorit__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/channel-fav-4.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/channel-fav-4.webp" />
+                      <img
+                        src="./images/channel-fav-4.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="4:15"
                       >24:59:59</time
                     >
@@ -491,11 +544,13 @@
               <div class="swiper-slide favorit__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/channel-fav-5.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/channel-fav-5.webp" />
+                      <img
+                        src="./images/channel-fav-5.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="4:15"
                       >4:15</time
                     >
@@ -515,11 +570,13 @@
               <div class="swiper-slide favorit__slide">
                 <div class="video-card">
                   <a href="#" class="video-card__thumb">
-                    <img
-                      src="./images/channel-fav-6.png"
-                      alt="image preview"
-                      class="video-card__thumbnail"
-                    />
+                    <picture>
+                      <source srcset="./images/channel-fav-6.webp" />
+                      <img
+                        src="./images/channel-fav-6.png"
+                        alt="image preview"
+                        class="video-card__thumbnail"
+                    /></picture>
                     <time class="video-card__thumb-duration" datetime="4:15"
                       >4:15</time
                     >
@@ -647,48 +704,63 @@
           <h2 class="nav__title">Subscriptions</h2>
           <ul class="nav__subscript">
             <li class="nav__subscript-item">
-              <a href="#" class="nav__subscript-link channel-title"
-                ><img
-                  src="./images/chanel-1.png"
-                  alt="subscribtion user avatar"
-                  class="channel-title__avatar"
-                /><span class="channel-title__name">Gussie Singleton</span></a
+              <a href="#" class="nav__subscript-link channel-title">
+                <picture>
+                  <source srcset="./images/chanel-1.webp" />
+                  <img
+                    src="./images/chanel-1.png"
+                    alt="subscribtion user avatar"
+                    class="channel-title__avatar"
+                /></picture>
+                <span class="channel-title__name">Gussie Singleton</span></a
               >
             </li>
             <li class="nav__subscript-item">
-              <a href="#" class="nav__subscript-link channel-title"
-                ><img
-                  src="./images/chanel-2.png"
-                  alt="subscribtion user avatar"
-                  class="channel-title__avatar"
-                /><span class="channel-title__name">Nora Francis</span></a
+              <a href="#" class="nav__subscript-link channel-title">
+                <picture>
+                  <source srcset="./images/chanel-2.webp" />
+                  <img
+                    src="./images/chanel-2.png"
+                    alt="subscribtion user avatar"
+                    class="channel-title__avatar"
+                /></picture>
+                <span class="channel-title__name">Nora Francis</span></a
               >
             </li>
             <li class="nav__subscript-item">
-              <a href="#" class="nav__subscript-link channel-title"
-                ><img
-                  src="./images/chanel-3.png"
-                  alt="subscribtion user avatar"
-                  class="channel-title__avatar"
-                /><span class="channel-title__name">Eunice Cortez</span></a
+              <a href="#" class="nav__subscript-link channel-title">
+                <picture>
+                  <source srcset="./images/chanel-3.webp" />
+                  <img
+                    src="./images/chanel-3.png"
+                    alt="subscribtion user avatar"
+                    class="channel-title__avatar"
+                /></picture>
+                <span class="channel-title__name">Eunice Cortez</span></a
               >
             </li>
             <li class="nav__subscript-item">
-              <a href="#" class="nav__subscript-link channel-title"
-                ><img
-                  src="./images/chanel-4.png"
-                  alt="subscribtion user avatar"
-                  class="channel-title__avatar"
-                /><span class="channel-title__name">Emma Hanson</span></a
+              <a href="#" class="nav__subscript-link channel-title">
+                <picture>
+                  <source srcset="./images/chanel-4.webp" />
+                  <img
+                    src="./images/chanel-4.png"
+                    alt="subscribtion user avatar"
+                    class="channel-title__avatar"
+                /></picture>
+                <span class="channel-title__name">Emma Hanson</span></a
               >
             </li>
             <li class="nav__subscript-item">
-              <a href="#" class="nav__subscript-link channel-title"
-                ><img
-                  src="./images/chanel-5.png"
-                  alt="subscribtion user avatar"
-                  class="channel-title__avatar"
-                /><span class="channel-title__name">Leah Berry</span></a
+              <a href="#" class="nav__subscript-link channel-title">
+                <picture>
+                  <source srcset="./images/chanel-5.webp" />
+                  <img
+                    src="./images/chanel-5.png"
+                    alt="subscribtion user avatar"
+                    class="channel-title__avatar"
+                /></picture>
+                <span class="channel-title__name">Leah Berry</span></a
               >
             </li>
           </ul>

@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const headerSearchMobile = document.querySelector(".header__search-mobile");
   const headerSearch = document.querySelector(".header__search");
+
   const headerSearchToggle = () => headerSearch.classList.toggle("is-open");
 
   headerSearchMobile.addEventListener("click", headerSearchToggle);
@@ -93,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   if (document.documentElement.scrollWidth <= 414) {
-    console.log("ok");
     swiperChannel.destroy();
     swiperRecommended.destroy();
     swiperFavorit.destroy();
