@@ -85,7 +85,9 @@ SLIDER BUTTON NEXT
 .slider-button-prev,
 .slider-button-next,
 .recommended__slider-button-prev,
-.recommended__slider-button-next {
+.recommended__slider-button-next,
+.favorit__slider-button-prev,
+.favorit__slider-button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -94,11 +96,13 @@ SLIDER BUTTON NEXT
   cursor: pointer;
 }
 .slider-button-prev,
-.recommended__slider-button-prev {
+.recommended__slider-button-prev,
+.favorit__slider-button-prev {
   right: 118px;
 }
 .slider-button-next,
-.recommended__slider-button-next {
+.recommended__slider-button-next,
+.favorit__slider-button-next {
   right: 80px;
 }
 .icon-arrow-left,
@@ -271,9 +275,9 @@ SIDEBAR
   left: 0;
   height: calc(100% - 115px);
   overflow-y: auto;
-  width: 209px;
-  padding: 0 15px 0 34px;
-  /* box-sizing: content-box; */
+  width: calc(165px + 15px);
+  padding: 0 0 0 34px;
+  box-sizing: content-box;
   /* margin-right: 66px; */
   background-color: #fff;
 }
@@ -408,7 +412,9 @@ SUBSCRIPT CHANNEL
   margin-bottom: 30px;
 }
 
-.subscript__channel {
+.subscript__header,
+.recommended__header,
+.favorit__header {
   margin-bottom: 30px;
 }
 
@@ -487,4 +493,16 @@ RECOMMENDED CHANNEL
 }
 .recommended .video-card__thumb {
   height: 220px;
+}
+/* *******************************
+FAVORIT CHANNEL
+******************************* */
+.favorit__header {
+  display: flex;
+  align-items: center;
+}
+.favorit__descr {
+  margin-left: 20px;
+  color: #c2c2c2;
+  white-space: nowrap;
 }

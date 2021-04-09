@@ -17,4 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".recommended__slider-button-prev",
     },
   });
+  const swiperFavorit = new Swiper(".favorit__slider", {
+    slidesPerView: 4,
+    spaceBetween: 40,
+    loop: true,
+    navigation: {
+      nextEl: ".favorit__slider-button-next",
+      prevEl: ".favorit__slider-button-prev",
+    },
+  });
 });
