@@ -46,6 +46,11 @@
               </svg>
             </button>
           </form>
+          <button class="header__search-mobile" type="button">
+            <svg class="icon header__search-mobile-icon">
+              <use xlink:href="./images/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </button>
           <div class="header__controls">
             <button class="header__controls-btn" type="button">
               <svg class="icon icon-camera header__controls-icon">
@@ -353,14 +358,19 @@
         </section>
         <section class="favorit">
           <div class="favorit__header channel">
-            <a class="foavorit__channel channel-title" href="#">
-              <img
-                src="./images/channel-fav-avatar.png"
-                alt="chanel avatar"
-                class="channel-title__avatar"
-              /><span class="channel-title__name">Food & Drink</span>
-            </a>
-            <span class="favorit__descr">Recommended channel for you</span>
+            <div class="favorit__header-inner">
+              <a class="foavorit__channel channel-title" href="#">
+                <img
+                  src="./images/channel-fav-avatar.png"
+                  alt="chanel avatar"
+                  class="channel-title__avatar"
+                /><span class="channel-title__name">Food & Drink</span>
+              </a>
+              <span class="favorit__descr">Recommended channel for you</span>
+            </div>
+            <button class="favorit__subscribe" type="button">
+              Subscribe 2.3m
+            </button>
             <div class="favorit__slider-button-prev">
               <svg class="icon icon-arrow-left">
                 <use
@@ -690,7 +700,58 @@
           </button>
         </aside>
       </main>
-      <footer class="footer">Footer</footer>
+      <footer class="footer">
+        <aside class="footer-sidebar">
+          <nav class="footer-sidebar__nav nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link">
+                  <svg class="icon icon-home nav__list-icon">
+                    <use xlink:href="./images/symbol-defs.svg#icon-home"></use>
+                  </svg>
+                  <span class="nav__list-text">Home</span></a
+                >
+              </li>
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link">
+                  <svg class="icon icon-trending nav__list-icon">
+                    <use
+                      xlink:href="./images/symbol-defs.svg#icon-trending"
+                    ></use>
+                  </svg>
+                  <span class="nav__list-text">Trending</span></a
+                >
+              </li>
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link">
+                  <svg class="icon icon-subscriptions nav__list-icon">
+                    <use
+                      xlink:href="./images/symbol-defs.svg#icon-subscriptions"
+                    ></use>
+                  </svg>
+                  <span class="nav__list-text">Subscriptions</span></a
+                >
+              </li>
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link">
+                  <svg class="icon icon-library nav__list-icon">
+                    <use
+                      xlink:href="./images/symbol-defs.svg#icon-library"
+                    ></use>
+                  </svg>
+                  <span class="nav__list-text">Library</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button class="nav__btn" type="button">
+            <svg class="icon icon-setting nav__btn-icon">
+              <use xlink:href="./images/symbol-defs.svg#icon-setting"></use>
+            </svg>
+            <span class="nav__btn-text">Setting</span>
+          </button>
+        </aside>
+      </footer>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <script src="./js/main.js"></script>
     </div>
